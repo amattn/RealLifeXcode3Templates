@@ -7,10 +7,17 @@ Better Xcode file and project templates.
 
 ### Install
 
+We can't use `git clone`, because /Developer isn't empty.  The following is roughly equivalent to `git clone`
+
     cd /Developer
-    git clone git@github.com:amattn/RealLifeXcodeTemplates.git
+    git init
+    git remote add origin git@github.com:amattn/RealLifeXcodeTemplates.git
+    git config branch.master.remote origin
+    git config branch.master.merge refs/heads/master
+    git pull
 
 ### Update
+
     cd /Developer
     git pull
 
