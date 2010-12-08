@@ -1,0 +1,25 @@
+{
+	Checkboxes = (
+		{
+			Key = Placeholder;
+			Title = "Not used";
+		},
+		{
+			Key = CoreData;
+			Title = "Use Core Data for storage";
+		},
+	);
+	OptionsLabel = Product;
+	PopupMenu = (
+		{
+			Key = iPhone;
+			Title = iPhone;
+		},
+	);
+	TemplateSelection = {
+		"" = "Navigation-based Application";
+		iPhone = "Navigation-based Application";
+		CoreData = "Navigation-based Core Data Application";
+		iPhoneCoreData = "Navigation-based Core Data Application";
+	};
+}

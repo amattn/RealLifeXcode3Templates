@@ -20,6 +20,10 @@ We can't use `git clone`, because /Developer isn't empty.  The following is roug
 
     cd /Developer
     git pull
+    
+Or all on one line from anywhere:
+
+    pushd /Developer; git pull; popd
 
 ### File Templates:
 
@@ -27,6 +31,7 @@ We can't use `git clone`, because /Developer isn't empty.  The following is roug
 - Headerdoc comments
 
 ### Project templates:
+
 - Improved Project layout
 - Static analysis on by default
 - Unit tests
