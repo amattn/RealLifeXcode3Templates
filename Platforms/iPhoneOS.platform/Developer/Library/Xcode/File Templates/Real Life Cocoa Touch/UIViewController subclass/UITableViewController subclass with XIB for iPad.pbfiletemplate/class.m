@@ -1,165 +1,210 @@
-//
-//  «FILENAME»
-//  «PROJECTNAME»
-//
-//  Created by «FULLUSERNAME» on «DATE».
-//  Copyright «YEAR» «ORGANIZATIONNAME». All rights reserved.
-//
+/*********************************************************************
+ *  \file «FILENAME»
+ *  \author «FULLUSERNAME»
+ *  \date «DATE»
+ *  \class «FILEBASENAMEASIDENTIFIER»
+ *  \brief Part of «PROJECTNAME»
+ *  \details
+ *
+ *  \abstract CLASS_ABSTRACT 
+ *  \copyright Copyright «ORGANIZATIONNAME» «YEAR». All rights reserved.
+ */
 
+//#import "«PROJECTNAME»_GlobalUtilities.h"
 «OPTIONALHEADERIMPORTLINE»
+
+@interface «FILEBASENAMEASIDENTIFIER» ()
+
+@end
 
 @implementation «FILEBASENAMEASIDENTIFIER»
 
-
+/*********************************************************************/
 #pragma mark -
-#pragma mark View lifecycle
+#pragma mark ** Lifecycle & Memory Management **
 
 /*
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+// The designated initializer. Override to perform setup that is required before the view is loaded.
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
+{
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])
+    {
+        // Custom initialization
+    }
+    return self;
 }
 */
 
+- (void)dealloc;
+{
+    [super dealloc];
+}
+
+- (void)didReceiveMemoryWarning;
+{
+    [super didReceiveMemoryWarning];
+    // Releases the view if it doesn't have a superview
+    // Release anything that's not essential, such as cached data
+}
+
+
+/*********************************************************************/
+#pragma mark -
+#pragma mark ** UIView Methods **
+
+- (void)viewDidLoad;
+{
+    [super viewDidLoad];
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewDidUnload;
+{
+	// Release any retained subviews of the main view.
+	// e.g. self.myOutlet = nil;
+}
+
 /*
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated;
+{
     [super viewWillAppear:animated];
 }
 */
 /*
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL)animated;
+{
     [super viewDidAppear:animated];
 }
 */
 /*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
+- (void)viewWillDisappear:(BOOL)animated;
+{
+	[super viewWillDisappear:animated];
 }
 */
 /*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
+- (void)viewDidDisappear:(BOOL)animated;
+{
+	[super viewDidDisappear:animated];
 }
 */
 
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Override to allow orientations other than the default portrait orientation.
-    return YES;
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation;
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES; //support all orienetations
 }
+*/
 
-
+/*********************************************************************/
 #pragma mark -
-#pragma mark Table view data source
+#pragma mark ** UITableViewData Helper Methods **
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
-    return <#number of sections#>;
+- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    // Configure the cell.
 }
 
+/*********************************************************************/
+#pragma mark -
+#pragma mark ** UITableViewDataSource **
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
-    return <#number of rows in section#>;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+{
+    return 0;
 }
 
 
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
     static NSString *CellIdentifier = @"Cell";
-    
+
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-    
-    // Configure the cell...
-    
+
+    [self configureCell:cell forRowAtIndexPath:indexPath];
+
     return cell;
 }
 
+/*********************************************************************/
+#pragma mark -
+#pragma mark ** UITableViewDelegate **
+
+/*
+// Override to support row selection in the table view.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    // Navigation logic may go here -- for example, create and push another view controller.
+	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
+	// [self.navigationController pushViewController:anotherViewController animated:YES];
+	// [anotherViewController release];
+}
+*/
 
 /*
 // Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath;
+{
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
 */
 
-
 /*
 // Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath;
+{
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-    }   
+        // Delete the row from the data source.
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    }
 }
 */
-
 
 /*
 // Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath;
+{
+
 }
 */
 
-
 /*
 // Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath;
+{
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
 */
 
-
+/*********************************************************************/
 #pragma mark -
-#pragma mark Table view delegate
+#pragma mark ** Utilities **
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-	/*
-	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-	 [self.navigationController pushViewController:detailViewController animated:YES];
-	 [detailViewController release];
-	 */
-}
-
-
+/*********************************************************************/
 #pragma mark -
-#pragma mark Memory management
+#pragma mark ** IBActions **
 
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Relinquish ownership any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload {
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
-}
-
-
-- (void)dealloc {
-    [super dealloc];
-}
-
+/*********************************************************************/
+#pragma mark -
+#pragma mark ** Accesssors **
 
 @end
 

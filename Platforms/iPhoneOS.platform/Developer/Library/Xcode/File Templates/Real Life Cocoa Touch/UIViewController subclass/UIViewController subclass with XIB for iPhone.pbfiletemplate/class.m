@@ -10,7 +10,7 @@
  *  \copyright Copyright «ORGANIZATIONNAME» «YEAR». All rights reserved.
  */
 
-//#import "«PROJECTNAME»_Common.h"
+//#import "«PROJECTNAME»_GlobalUtilities.h"
 «OPTIONALHEADERIMPORTLINE»
 
 @interface «FILEBASENAMEASIDENTIFIER» ()
@@ -23,7 +23,8 @@
 
 /*********************************************************************/
 #pragma mark -
-#pragma mark ** Methods **
+#pragma mark ** Lifecycle & Memory Management **
+
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;

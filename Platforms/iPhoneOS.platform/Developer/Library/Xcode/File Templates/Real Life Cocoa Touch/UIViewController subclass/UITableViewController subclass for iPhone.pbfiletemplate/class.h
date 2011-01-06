@@ -1,16 +1,28 @@
-//
-//  «FILENAME»
-//  «PROJECTNAME»
-//
-//  Created by «FULLUSERNAME» on «DATE».
-//  Copyright «YEAR» «ORGANIZATIONNAME». All rights reserved.
-//
+/*********************************************************************
+ *  \file «FILENAME»
+ *  \author «FULLUSERNAME»
+ *  \date «DATE»
+ *  \class «FILEBASENAMEASIDENTIFIER»
+ *  \brief Part of «PROJECTNAME»
+ *  \details
+ *
+ *  \abstract CLASS_ABSTRACT 
+ *  \copyright Copyright «ORGANIZATIONNAME» «YEAR». All rights reserved.
+ */
 
 #import <UIKit/UIKit.h>
 
+#pragma mark ** Constant Defines **
 
-@interface «FILEBASENAMEASIDENTIFIER» : UITableViewController {
+#pragma mark ** Protocols & Declarations **
+
+@interface «FILEBASENAMEASIDENTIFIER» : UITableViewController
+{
 
 }
+
+#pragma mark ** Properties **
+
+#pragma mark ** Methods **
 
 @end

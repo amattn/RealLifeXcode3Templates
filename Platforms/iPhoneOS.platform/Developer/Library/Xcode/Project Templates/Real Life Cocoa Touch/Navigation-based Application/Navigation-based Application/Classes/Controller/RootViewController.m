@@ -16,7 +16,7 @@
 
 /*********************************************************************/
 #pragma mark -
-#pragma mark ** Memory management **
+#pragma mark ** Lifecycle & Memory management **
 
 - (void)dealloc;
 {

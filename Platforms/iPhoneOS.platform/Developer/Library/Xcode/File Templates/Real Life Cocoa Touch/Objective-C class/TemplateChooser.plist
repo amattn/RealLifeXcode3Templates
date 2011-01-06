@@ -20,12 +20,6 @@
 		</dict>
 		<dict>
 			<key>Key</key>
-			<string>TVCon</string>
-			<key>Title</key>
-			<string>UITableViewController</string>
-		</dict>
-		<dict>
-			<key>Key</key>
 			<string>View</string>
 			<key>Title</key>
 			<string>UIView</string>
@@ -41,8 +35,6 @@
 		<string>NSObject subclass</string>
 		<key>View</key>
 		<string>UIView subclass</string>
-		<key>TVCon</key>
-		<string>UITableViewController subclass</string>
 	</dict>
 </dict>
 </plist>

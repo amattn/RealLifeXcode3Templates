@@ -10,7 +10,7 @@
  *  \copyright Copyright «ORGANIZATIONNAME» «YEAR». All rights reserved.
  */
 
-//#import "«PROJECTNAME»_Common.h"
+//#import "«PROJECTNAME»_GlobalUtilities.h"
 «OPTIONALHEADERIMPORTLINE»
 
 @interface «FILEBASENAMEASIDENTIFIER» ()
@@ -25,7 +25,8 @@
 
 /*********************************************************************/
 #pragma mark -
-#pragma mark ** Methods **
+#pragma mark ** Lifecycle & Memory Management **
+
 /*
 - (id)initWithStyle:(UITableViewStyle)style;
 {
