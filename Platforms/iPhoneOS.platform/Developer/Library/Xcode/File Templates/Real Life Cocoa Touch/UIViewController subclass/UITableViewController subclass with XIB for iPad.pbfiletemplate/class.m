@@ -158,14 +158,15 @@ typedef enum {
     if (cell == nil)
     {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
-        // Configuration of cell attributes that never change can go here.  ie:
+        // Configuration of cell attributes that never change can go here.  
+        // For example:
         // cell.textLabel.textColor = <#UIColor *someColor#>      
     }
     
     // You may need to configure cell attrirbutes that differ based on 
     // the row from different places.  
     // Thus, configureCell:forRowAtIndexPath: is factored out into its
-    // own method.
+    // own helper method.
     [self configureCell:cell forRowAtIndexPath:indexPath];
 
     return cell;
