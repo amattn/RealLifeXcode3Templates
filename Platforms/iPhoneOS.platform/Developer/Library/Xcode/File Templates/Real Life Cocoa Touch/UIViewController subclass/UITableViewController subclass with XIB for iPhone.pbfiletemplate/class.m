@@ -13,11 +13,24 @@
 //#import "«PROJECTNAME»_GlobalUtilities.h"
 «OPTIONALHEADERIMPORTLINE»
 
+#pragma mark ** Constant Defines **
+
+typedef enum {
+    «FILEBASENAMEASIDENTIFIER»SectionName1,
+    «FILEBASENAMEASIDENTIFIER»SectionName2,
+    «FILEBASENAMEASIDENTIFIER»SectionCount,
+    «FILEBASENAMEASIDENTIFIER»SectionUndefined
+} «FILEBASENAMEASIDENTIFIER»Section;
+
+#pragma mark ** Protocols & Declarations **
+
 @interface «FILEBASENAMEASIDENTIFIER» ()
 
 @end
 
 @implementation «FILEBASENAMEASIDENTIFIER»
+#pragma mark ** Synthesis **
+#pragma mark ** Static Variables **
 
 /*********************************************************************/
 #pragma mark -
@@ -115,7 +128,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
 {
-    return 1;
+    return «FILEBASENAMEASIDENTIFIER»SectionCount;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
@@ -127,11 +140,12 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    static NSString *CellIdentifier = @"Cell";
+    //in practice, each section typically has it's own identifier.
+    NSString *cellIdentifier = [NSString stringWithFormat:@"«FILEBASENAMEASIDENTIFIER»SectionIndex_%d", indexPath.section];
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
     }
 
     [self configureCell:cell forRowAtIndexPath:indexPath];
