@@ -10,7 +10,6 @@
  *  \copyright Copyright «ORGANIZATIONNAME» «YEAR». All rights reserved.
  */
 
-//#import "«PROJECTNAME»_GlobalUtilities.h"
 #import <SenTestingKit/SenTestingKit.h>
 #import <UIKit/UIKit.h>
 

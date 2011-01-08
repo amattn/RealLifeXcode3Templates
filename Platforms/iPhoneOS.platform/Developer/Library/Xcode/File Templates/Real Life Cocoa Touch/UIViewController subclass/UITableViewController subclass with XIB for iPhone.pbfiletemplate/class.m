@@ -15,8 +15,8 @@
 #pragma mark ** Constant Defines **
 
 typedef enum {
-    «FILEBASENAMEASIDENTIFIER»SectionName1,
-    «FILEBASENAMEASIDENTIFIER»SectionName2,
+    «FILEBASENAMEASIDENTIFIER»SectionType1,
+    «FILEBASENAMEASIDENTIFIER»SectionType2,
     «FILEBASENAMEASIDENTIFIER»SectionCount,
     «FILEBASENAMEASIDENTIFIER»SectionUndefined
 } «FILEBASENAMEASIDENTIFIER»Section;
@@ -119,6 +119,19 @@ typedef enum {
 - (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     // Configure the cell.
+    switch (indexPath.section)
+    {
+        case «FILEBASENAMEASIDENTIFIER»SectionType1:
+            //configure cells for this section type
+            cell.textLabel.text = @"test1";
+            break;
+        case «FILEBASENAMEASIDENTIFIER»SectionType2:
+            //configure cells for this section type
+            cell.textLabel.text = @"test2";
+            break;
+        default:
+            break;
+    }
 }
 
 /*********************************************************************/
@@ -132,21 +145,27 @@ typedef enum {
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
-    return 0;
+    return 1;
 }
 
-
-// Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    //in practice, each section typically has it's own identifier.
+    //Typically each section has it's own identifier.
     NSString *cellIdentifier = [NSString stringWithFormat:@"«FILEBASENAMEASIDENTIFIER»SectionIndex_%d", indexPath.section];
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
-    }
 
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil)
+    {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
+        // Configuration of cell attributes that never change can go here.  ie:
+        // cell.textLabel.textColor = <#UIColor *someColor#>      
+    }
+    
+    // You may need to configure cell attrirbutes that differ based on 
+    // the row from different places.  
+    // Thus, configureCell:forRowAtIndexPath: is factored out into its
+    // own method.
     [self configureCell:cell forRowAtIndexPath:indexPath];
 
     return cell;
