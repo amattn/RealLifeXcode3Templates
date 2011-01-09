@@ -15,7 +15,7 @@
 #pragma mark ** Constant Defines **
 
 typedef enum {
-    «FILEBASENAMEASIDENTIFIER»SectionType1,
+    «FILEBASENAMEASIDENTIFIER»SectionType1 = 0,
     «FILEBASENAMEASIDENTIFIER»SectionType2,
     «FILEBASENAMEASIDENTIFIER»SectionCount,
     «FILEBASENAMEASIDENTIFIER»SectionUndefined
