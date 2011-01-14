@@ -1,25 +1,25 @@
 /*********************************************************************
- *  \file «FILENAME»
- *  \author «FULLUSERNAME»
- *  \date «DATE»
- *  \class «FILEBASENAMEASIDENTIFIER»
- *  \brief Part of «PROJECTNAME»
+ *  \file ___PROJECTNAMEASIDENTIFIER___TestCase.m
+ *  \author Matt Nunogawa
+ *  \date 2011/1/13
+ *  \class ___PROJECTNAMEASIDENTIFIER___TestCase
+ *  \brief Part of ___PROJECTNAMEASIDENTIFIER___
  *  \details
  *
- *  \abstract CLASS_ABSTRACT 
- *  \copyright Copyright «ORGANIZATIONNAME» «YEAR». All rights reserved.
+ *  \abstract CLASS_ABSTRACT
+ *  \copyright Copyright 6Tringle LLC 2011. All rights reserved.
  */
 
 #import <SenTestingKit/SenTestingKit.h>
 #import <UIKit/UIKit.h>
 
-@interface «FILEBASENAMEASIDENTIFIER» : SenTestCase
+@interface ___PROJECTNAMEASIDENTIFIER___TestCase : SenTestCase
 {
 
 }
 @end
 
-@implementation «FILEBASENAMEASIDENTIFIER»
+@implementation ___PROJECTNAMEASIDENTIFIER___TestCase
 
 - (void)setUp;
 {
@@ -28,7 +28,7 @@
 
 - (void)tearDown;
 {
-    
+
 }
 
 - (void)testTestFramework;
