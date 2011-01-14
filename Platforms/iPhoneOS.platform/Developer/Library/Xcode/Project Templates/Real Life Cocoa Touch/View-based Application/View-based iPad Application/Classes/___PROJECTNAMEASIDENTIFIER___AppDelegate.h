@@ -1,16 +1,21 @@
-//
-//  ___PROJECTNAMEASIDENTIFIER___AppDelegate.h
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
-//
+/*********************************************************************
+ *  \file ___PROJECTNAMEASIDENTIFIER___AppDelegate.h
+ *  \author ___FULLUSERNAME___
+ *  \date ___DATE___
+ *  \class RootViewController
+ *  \brief Part of ___PROJECTNAME___
+ *  \details
+ *
+ *  \abstract CLASS_ABSTRACT 
+ *  \copyright Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
+ */
 
 #import <UIKit/UIKit.h>
 
 @class ___PROJECTNAMEASIDENTIFIER___ViewController;
 
-@interface ___PROJECTNAMEASIDENTIFIER___AppDelegate : NSObject <UIApplicationDelegate> {
+@interface ___PROJECTNAMEASIDENTIFIER___AppDelegate : NSObject <UIApplicationDelegate>
+{
     UIWindow *window;
     ___PROJECTNAMEASIDENTIFIER___ViewController *viewController;
 }
