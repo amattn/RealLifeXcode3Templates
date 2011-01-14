@@ -2,7 +2,7 @@
  *  \file ___PROJECTNAMEASIDENTIFIER___AppDelegate.h
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
- *  \class RootViewController
+ *  \class ___PROJECTNAMEASIDENTIFIER___AppDelegate
  *  \brief Part of ___PROJECTNAME___
  *  \details
  *

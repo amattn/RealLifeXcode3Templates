@@ -1,16 +1,24 @@
-//
-//  ___PROJECTNAMEASIDENTIFIER___ViewController.h
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
-//
+/*********************************************************************
+ *  \file ___PROJECTNAMEASIDENTIFIER___ViewController.h
+ *  \author ___FULLUSERNAME___
+ *  \date ___DATE___
+ *  \class ___PROJECTNAMEASIDENTIFIER___ViewController
+ *  \brief Part of ___PROJECTNAME___
+ *  \details
+ *
+ *  \abstract CLASS_ABSTRACT 
+ *  \copyright Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
+ */
 
-#import <UIKit/UIKit.h>
+#pragma mark ** Constant Defines **
 
-@interface ___PROJECTNAMEASIDENTIFIER___ViewController : UIViewController {
-
+@interface ___PROJECTNAMEASIDENTIFIER___ViewController : UIViewController
+{
+    
 }
 
-@end
+#pragma mark ** Properties **
 
+#pragma mark ** Methods **
+
+@end
