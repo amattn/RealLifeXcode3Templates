@@ -14,7 +14,7 @@
 
 @interface RootViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 {
-    NSFetchedResultsController *fetchedResultsController_;  ///< Effeciently fetch from CoreData to populate UITableView
+    NSFetchedResultsController *fetchedResultsController_;  ///< Efficiently fetch from CoreData to populate UITableView
 }
 
 #pragma mark ** Properties **
