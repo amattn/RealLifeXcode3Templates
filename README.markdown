@@ -1,7 +1,7 @@
 # Real Life Xcode File and Project Templates
 
 - maintainer: Matt Nunogawa
-- version: 0.1
+- version: 2
 
 Better Xcode file and project templates.
 
@@ -32,8 +32,17 @@ Or all on one line from anywhere:
 
 ### Project templates:
 
+App template types:
+
+- Navigvation based app
+    - with and without CoreData
+- View based app
+    - iPad
+    - iPhone
+
+Features:
+
 - Improved Project layout
 - Static analysis on by default
 - Unit tests
 - Refactored Core Data stack (when appropriate)
-
