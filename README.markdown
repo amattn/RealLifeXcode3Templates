@@ -1,7 +1,7 @@
 # Real Life Xcode File and Project Templates
 
 - maintainer: Matt Nunogawa
-- version: 2
+- version: 0.3
 
 Better Xcode file and project templates.
 

@@ -8,7 +8,7 @@
  *           This software is provided "as-is", and without any express or
  *           implied warranties, including, without limitation, the implied
  *           warranties of merchantibility and fitness for a particular purpose.
- *  \abstract Set of miscellaneous, useful macro utilties 
+ *  \abstract Set of miscellaneous, useful macro utilties
  *  \version 2.0.0
  *  \copyright Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
  */
@@ -25,7 +25,7 @@
 #pragma mark -
 #pragma mark ** Log macros **
 
-// standard types                      
+// standard types
 #define LOG_BOOL(object)    (NSLog(@"" #object @" %@", (object ? @"YES" : @"NO") ));
 #define LOG_CHAR(object)    (NSLog(@"" #object @" %c", object ));
 #define LOG_INT32(object)   (NSLog(@"" #object @" %d", object ));
@@ -41,7 +41,7 @@
 #if __LP64__ || (TARGET_OS_EMBEDDED && !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64
 #define LOG_INTEGER(object)     (NSLog(@"" #object @" %ld", object ));
 #define LOG_UINTEGER(object)    (NSLog(@"" #object @" %lu", object ));
-#else                                     
+#else
 #define LOG_INTEGER(object)     (NSLog(@"" #object @" %d", object ));
 #define LOG_UINTEGER(object)    (NSLog(@"" #object @" %u", object ));
 #endif
@@ -54,15 +54,15 @@
 // Various Cocoa struct log macros
 // NSRange
 #define LOG_RANGE(range)    (NSLog(@"" #range @" loc:%u len:%u", range.location, range.length ));
-// CGPoint                             
+// CGPoint
 #define LOG_POINT(point)    (NSLog(@"" #point @" x:%f y:%f", point.x, point.y ));
-// CGSize                              
+// CGSize
 #define LOG_SIZE(size)      (NSLog(@"" #size @" width:%f height:%f", size.width, size.height ));
-// CGRect                              
+// CGRect
 #define LOG_RECT(rect)      (NSLog(@"" #rect @" x:%f y:%f w:%f h:%f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height ));
-// CLLocationCoordinate2D              
+// CLLocationCoordinate2D
 #define LOG_COORD2D(coord)  (NSLog(@"" #coord @" lat,lon: %+.6f,%+.6f",coord.latitude, coord.longitude ));
-                                       
+
 #pragma mark -
 #pragma mark ** Assertion macros **
 
@@ -86,7 +86,7 @@
 
 // Unabashedly cribbed from Wil Shipley (of Delicious Monster fame)
 // http://www.wilshipley.com/blog/2005/10/pimp-my-code-interlude-free-code.html
-static inline BOOL IsEmpty(id thing) 
+static inline BOOL IsEmpty(id thing)
 {
     return thing == nil
     || ([thing respondsToSelector:@selector(length)] && [(NSData *)thing length] == 0)

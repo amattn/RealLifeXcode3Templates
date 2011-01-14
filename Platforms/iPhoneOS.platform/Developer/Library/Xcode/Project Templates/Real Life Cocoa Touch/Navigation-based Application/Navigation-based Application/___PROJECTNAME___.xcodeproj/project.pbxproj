@@ -15,7 +15,7 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
-		2AFE1A4412AEC4D0004875D2 /* ProjectTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE1A0A12AEC25C004875D2 /* ProjectTestCase.m */; };
+		2A9C056E12E0BA8A00F78B99 /* ___PROJECTNAMEASIDENTIFIER___TestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C056D12E0BA8A00F78B99 /* ___PROJECTNAMEASIDENTIFIER___TestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,25 +23,25 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2AFE1A3E12AEC4C2004875D2 /* UnitTest */;
+			remoteGlobalIDString = 2AFE1A3E12AEC4C2004875D2;
 			remoteInfo = UnitTest;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PROJECTNAMEASIDENTIFIER___AppDelegate.h"; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "___PROJECTNAMEASIDENTIFIER___AppDelegate.m"; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* ___PROJECTNAME___.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "___PROJECTNAME___.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3623240D0F684500981E51 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ___PROJECTNAMEASIDENTIFIER___AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ___PROJECTNAMEASIDENTIFIER___AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ___PROJECTNAME___.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ___PROJECTNAME___.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28A0AAE50D9B0CCF005BE974 /* ___PROJECTNAMEASIDENTIFIER____Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PROJECTNAMEASIDENTIFIER____Prefix.pch"; sourceTree = "<group>"; };
+		28A0AAE50D9B0CCF005BE974 /* ___PROJECTNAMEASIDENTIFIER____Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ___PROJECTNAMEASIDENTIFIER____Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2AFE1A0A12AEC25C004875D2 /* ProjectTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectTestCase.m; sourceTree = "<group>"; };
+		2A9C056D12E0BA8A00F78B99 /* ___PROJECTNAMEASIDENTIFIER___TestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ___PROJECTNAMEASIDENTIFIER___TestCase.m; sourceTree = "<group>"; };
 		2AFE1A3F12AEC4C2004875D2 /* UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFE1A4012AEC4C2004875D2 /* UnitTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "UnitTest-Info.plist"; path = "../UnitTest-Info.plist"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ___PROJECTNAMEASIDENTIFIER___-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "___PROJECTNAMEASIDENTIFIER___-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				2AFE1A4012AEC4C2004875D2 /* UnitTest-Info.plist */,
-				2AFE1A0A12AEC25C004875D2 /* ProjectTestCase.m */,
+				2A9C056D12E0BA8A00F78B99 /* ___PROJECTNAMEASIDENTIFIER___TestCase.m */,
 			);
 			path = UnitTest;
 			sourceTree = "<group>";
@@ -182,8 +182,8 @@
 			dependencies = (
 				2AFE1A4A12AEC4DE004875D2 /* PBXTargetDependency */,
 			);
-			name = "___PROJECTNAME___";
-			productName = "___PROJECTNAME___";
+			name = ___PROJECTNAME___;
+			productName = ___PROJECTNAME___;
 			productReference = 1D6058910D05DD3D006BFB54 /* ___PROJECTNAME___.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -281,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AFE1A4412AEC4D0004875D2 /* ProjectTestCase.m in Sources */,
+				2A9C056E12E0BA8A00F78B99 /* ___PROJECTNAMEASIDENTIFIER___TestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,9 +304,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "___PROJECTNAMEASIDENTIFIER____Prefix.pch";
+				GCC_PREFIX_HEADER = ___PROJECTNAMEASIDENTIFIER____Prefix.pch;
 				INFOPLIST_FILE = "___PROJECTNAMEASIDENTIFIER___-Info.plist";
-				PRODUCT_NAME = "___PROJECTNAME___";
+				PRODUCT_NAME = ___PROJECTNAME___;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Debug;
@@ -317,9 +317,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "___PROJECTNAMEASIDENTIFIER____Prefix.pch";
+				GCC_PREFIX_HEADER = ___PROJECTNAMEASIDENTIFIER____Prefix.pch;
 				INFOPLIST_FILE = "___PROJECTNAMEASIDENTIFIER___-Info.plist";
-				PRODUCT_NAME = "___PROJECTNAME___";
+				PRODUCT_NAME = ___PROJECTNAME___;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -339,6 +339,8 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ___PROJECTNAMEASIDENTIFIER____Prefix.pch;
 				INFOPLIST_FILE = "UnitTest-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -368,6 +370,8 @@
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ___PROJECTNAMEASIDENTIFIER____Prefix.pch;
 				INFOPLIST_FILE = "UnitTest-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
