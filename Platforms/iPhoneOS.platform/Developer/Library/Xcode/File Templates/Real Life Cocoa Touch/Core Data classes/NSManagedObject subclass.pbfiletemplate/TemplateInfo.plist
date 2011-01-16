@@ -1,0 +1,5 @@
+{
+	MainTemplateFile = "class.m";
+	CounterpartTemplateFile = "class.h";
+	Description = "An Objective-C subclass of NSManagedObject, for use with Core Data, with an optional header which includes the <CoreData/CoreData.h> import.  Typically, each Core Data entity will have one subclass of NSManagedObject (ie. RLBook.m, RLAuthor.m, etc.) and one subclass of RLCoreDataObjectManager (ie. RLBookManager.m, RLAuthorManager.m, etc.).";
+}

@@ -1,4 +1,4 @@
-/*********************************************************************
+/******************************************************************************
  *  \file RootViewController.h
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
@@ -11,6 +11,8 @@
  */
 
 #pragma mark ** Constant Defines **
+
+#pragma mark ** Protocols & Declarations **
 
 @interface RootViewController : UITableViewController
 {

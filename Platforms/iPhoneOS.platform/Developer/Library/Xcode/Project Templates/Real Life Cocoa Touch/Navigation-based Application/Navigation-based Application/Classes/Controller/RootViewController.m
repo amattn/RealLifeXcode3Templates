@@ -1,4 +1,4 @@
-/*********************************************************************
+/******************************************************************************
  *  \file RootViewController.m
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
@@ -14,7 +14,7 @@
 
 @implementation RootViewController
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Lifecycle & Memory management **
 
@@ -31,7 +31,7 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UIView Methods **
 
@@ -83,7 +83,7 @@
 }
  */
  
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewData Helper Methods **
 
@@ -92,7 +92,7 @@
     // Configure the cell.
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDataSource **
 
@@ -121,7 +121,7 @@
     return cell;
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDelegate **
 
@@ -130,9 +130,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     // Navigation logic may go here -- for example, create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController animated:YES];
-	// [anotherViewController release];
+    // AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
+    // [self.navigationController pushViewController:anotherViewController animated:YES];
+    // [anotherViewController release];
 }
 */
 
@@ -176,15 +176,15 @@
 }
 */
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** IBActions **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Accesssors **
 

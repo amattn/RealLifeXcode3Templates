@@ -1,0 +1,5 @@
+{
+	MainTemplateFile = "class.m";
+	CounterpartTemplateFile = "class.h";
+	Description = "This template should be named: \"RLCoreDataEnvironment.m\".\n\nThis is a template for a singleton, thus you typically only need one per app or one per bundle.\nA high level wrapper around a basic Core Data setup.  Also can sever as a starting point for a more advanced Core Data setup.";
+}

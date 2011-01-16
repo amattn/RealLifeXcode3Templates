@@ -1,4 +1,4 @@
-/*********************************************************************
+/******************************************************************************
  *  \file «FILENAME»
  *  \author «FULLUSERNAME»
  *  \date «DATE»
@@ -31,7 +31,7 @@ typedef enum {
 #pragma mark ** Synthesis **
 #pragma mark ** Static Variables **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Lifecycle & Memory Management **
 
@@ -60,7 +60,7 @@ typedef enum {
 }
 
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UIView Methods **
 
@@ -73,8 +73,8 @@ typedef enum {
 
 - (void)viewDidUnload;
 {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
 }
 
 /*
@@ -92,13 +92,13 @@ typedef enum {
 /*
 - (void)viewWillDisappear:(BOOL)animated;
 {
-	[super viewWillDisappear:animated];
+    [super viewWillDisappear:animated];
 }
 */
 /*
 - (void)viewDidDisappear:(BOOL)animated;
 {
-	[super viewDidDisappear:animated];
+    [super viewDidDisappear:animated];
 }
 */
 
@@ -112,7 +112,7 @@ typedef enum {
 }
 */
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewData Helper Methods **
 
@@ -134,7 +134,7 @@ typedef enum {
     }
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDataSource **
 
@@ -172,7 +172,7 @@ typedef enum {
     return cell;
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDelegate **
 
@@ -181,9 +181,9 @@ typedef enum {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     // Navigation logic may go here -- for example, create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController animated:YES];
-	// [anotherViewController release];
+    // AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
+    // [self.navigationController pushViewController:anotherViewController animated:YES];
+    // [anotherViewController release];
 }
 */
 
@@ -227,15 +227,15 @@ typedef enum {
 }
 */
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** IBActions **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Accesssors **
 

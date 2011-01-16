@@ -1,4 +1,4 @@
-/*********************************************************************
+/******************************************************************************
  *  \file RootViewController.m
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
@@ -17,9 +17,9 @@
 
 #pragma mark ** Synthesis **
 
-@synthesize fetchedResultsController = fetchedResultsController_;
+@synthesize fetchedResultsController = _fetchedResultsController;
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Memory management **
 
@@ -37,7 +37,7 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UIView Methods **
 
@@ -99,7 +99,7 @@
 }
  */
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** CoreData Methods **
 
@@ -118,7 +118,7 @@
     [[___PROJECTNAMEASIDENTIFIER___CoreDataEnvironment singleton] saveContextForIdentifier:___PROJECTNAMEASIDENTIFIER___MainThreadContext];
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewData Helper Methods **
 
@@ -130,7 +130,7 @@
     cell.textLabel.text = [[managedObject valueForKey:@"timeStamp"] description];
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDataSource **
 
@@ -160,7 +160,7 @@
     return cell;
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDelegate **
 
@@ -208,7 +208,7 @@
 }
 
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** NSFetchedResultsControllerDelegate **
 
@@ -270,22 +270,22 @@
     [self.tableView endUpdates];
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** IBActions **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Accesssors **
 
 - (NSFetchedResultsController *)fetchedResultsController;
 {
-    if (fetchedResultsController_)
-        return fetchedResultsController_;
+    if (_fetchedResultsController)
+        return _fetchedResultsController;
 
     /*
      Set up the fetched results controller.
@@ -307,13 +307,13 @@
 
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    fetchedResultsController_ = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                                                     managedObjectContext:context
                                                                       sectionNameKeyPath:nil
                                                                                cacheName:@"___PROJECTNAMEASIDENTIFIER___Root"];
 
-    fetchedResultsController_.delegate = self;
-    return fetchedResultsController_;
+    _fetchedResultsController.delegate = self;
+    return _fetchedResultsController;
 }
 
 @end

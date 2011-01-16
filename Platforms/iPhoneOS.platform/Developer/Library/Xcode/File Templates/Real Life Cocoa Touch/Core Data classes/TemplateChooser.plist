@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>OptionsLabel</key>
+	<string>Template:</string>
+	<key>PopupMenu</key>
+	<array>
+		<dict>
+			<key>Key</key>
+			<string>MOS</string>
+			<key>Title</key>
+			<string>NSManagedObject subclass</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>CDOMS</string>
+			<key>Title</key>
+			<string>RLCoreDataObjectManager subclass</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>CDOMB</string>
+			<key>Title</key>
+			<string>RLCoreDataObjectManager base class</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>CDE</string>
+			<key>Title</key>
+			<string>RLCoreDataEnvironment base class</string>
+		</dict>
+	</array>
+	<key>TemplateSelection</key>
+	<dict>
+		<key></key>
+		<string>NSManagedObject subclass</string>
+		<key>MOS</key>
+		<string>NSManagedObject subclass</string>
+		<key>CDOMS</key>
+		<string>RLCoreDataObjectManager subclass</string>
+		<key>CDOMB</key>
+		<string>RLCoreDataObjectManager base class</string>
+		<key>CDE</key>
+		<string>RLCoreDataEnvironment base class</string>
+	</dict>
+</dict>
+</plist>

@@ -1,4 +1,4 @@
-/*********************************************************************
+/******************************************************************************
  *  \file ___PROJECTNAMEASIDENTIFIER___AppDelegate.h
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
@@ -12,8 +12,8 @@
 
 @interface ___PROJECTNAMEASIDENTIFIER___AppDelegate : NSObject <UIApplicationDelegate>
 {
-    UIWindow *window_;
-    UINavigationController *navigationController_;
+    UIWindow *_window;
+    UINavigationController *_navigationController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

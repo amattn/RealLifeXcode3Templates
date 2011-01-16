@@ -1,4 +1,4 @@
-/*********************************************************************
+/******************************************************************************
  *  \file ___PROJECTNAMEASIDENTIFIER___ViewController.h
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
@@ -11,6 +11,8 @@
  */
 
 #pragma mark ** Constant Defines **
+
+#pragma mark ** Protocols & Declarations **
 
 @interface ___PROJECTNAMEASIDENTIFIER___ViewController : UIViewController
 {

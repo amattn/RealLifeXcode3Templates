@@ -1,4 +1,4 @@
-/*********************************************************************
+/******************************************************************************
  *  \file «FILENAME»
  *  \author «FULLUSERNAME»
  *  \date «DATE»
@@ -20,7 +20,7 @@
 #pragma mark ** Synthesis **
 #pragma mark ** Static Variables **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Lifecycle & Memory Management **
 
@@ -48,7 +48,7 @@
     // Release anything that's not essential, such as cached data
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UIViewController Methods **
 
@@ -60,8 +60,8 @@
 
 - (void)viewDidUnload;
 {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
     [super viewDidUnload];
 }
 
@@ -80,13 +80,13 @@
 /*
 - (void)viewWillDisappear:(BOOL)animated;
 {
-	[super viewWillDisappear:animated];
+    [super viewWillDisappear:animated];
 }
 */
 /*
 - (void)viewDidDisappear:(BOOL)animated;
 {
-	[super viewDidDisappear:animated];
+    [super viewDidDisappear:animated];
 }
 */
 
@@ -100,15 +100,15 @@
 }
 */
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** IBActions **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Accesssors **
 

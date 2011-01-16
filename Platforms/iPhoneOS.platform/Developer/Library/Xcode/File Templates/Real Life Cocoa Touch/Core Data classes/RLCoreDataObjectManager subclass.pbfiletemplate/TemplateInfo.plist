@@ -1,0 +1,5 @@
+{
+	MainTemplateFile = "class.m";
+	CounterpartTemplateFile = "class.h";
+	Description = "An Objective-C subclass of RLCoreDataObjectManager.  This subclass is intended to encapsulate operations and actions that apply to a set of multiple instances of an NSManagedObject.  Typically, each Core Data entity will have one subclass of NSManagedObject (ie. RLBook.m, RLAuthor.m, etc.) and one subclass of RLCoreDataObjectManager (ie. RLBookManager.m, RLAuthorManager, etc.).";
+}

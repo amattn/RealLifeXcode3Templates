@@ -1,0 +1,5 @@
+{
+	MainTemplateFile = "class.m";
+	CounterpartTemplateFile = "class.h";
+	Description = "This template should be named: \"RLCoreDataObjectManager.m\".\n\nThis is a template for an abstract base class, thus you typically only need one per app.\nA high level abstract base class used for encapsulating .";
+}

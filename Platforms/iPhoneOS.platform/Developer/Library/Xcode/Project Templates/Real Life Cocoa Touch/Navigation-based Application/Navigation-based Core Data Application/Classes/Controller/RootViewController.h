@@ -1,4 +1,4 @@
-/*********************************************************************
+/******************************************************************************
  *  \file RootViewController.h
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
@@ -12,9 +12,11 @@
 
 #pragma mark ** Constant Defines **
 
+#pragma mark ** Protocols & Declarations **
+
 @interface RootViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 {
-    NSFetchedResultsController *fetchedResultsController_;  ///< Efficiently fetch from CoreData to populate UITableView
+    NSFetchedResultsController *_fetchedResultsController;  ///< Efficiently fetch from CoreData to populate UITableView
 }
 
 #pragma mark ** Properties **
