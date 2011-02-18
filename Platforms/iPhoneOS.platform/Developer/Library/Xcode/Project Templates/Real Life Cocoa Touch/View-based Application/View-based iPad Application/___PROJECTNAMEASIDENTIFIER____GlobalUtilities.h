@@ -22,7 +22,7 @@
 #define RLQUICK_FLOAT(x) [NSNumber numberWithFloat:x]
 #define RLQUICK_INTEGER(x) [NSNumber numberWithInteger:x]
 
-#define RLQUICK_NSERROR(error_code, error_description) [NSError errorWithDomain:NSStringFromClass([self class]) code:error_code userInfo:[NSDictionary dictionaryWithObject:error_description forKey:NSLocalizedDescriptionKey]];
+#define RLQUICK_ERROR(error_code, error_description) [NSError errorWithDomain:NSStringFromClass([self class]) code:error_code userInfo:[NSDictionary dictionaryWithObject:error_description forKey:NSLocalizedDescriptionKey]];
 
 #pragma mark -
 #pragma mark ** Log macros **

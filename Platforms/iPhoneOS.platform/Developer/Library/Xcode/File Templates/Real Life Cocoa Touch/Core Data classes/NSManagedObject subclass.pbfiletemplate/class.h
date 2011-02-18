@@ -6,7 +6,8 @@
  *  \brief Part of «PROJECTNAME»
  *  \details
  *
- *  \abstract CATEGORY_ABSTRACT 
+ *  \abstract NSManagedObject subclass.  Encapsulated functionality specific to 
+ *            a given Core Data Entity. 
  *  \copyright Copyright «ORGANIZATIONNAME» «YEAR». All rights reserved.
  */
 

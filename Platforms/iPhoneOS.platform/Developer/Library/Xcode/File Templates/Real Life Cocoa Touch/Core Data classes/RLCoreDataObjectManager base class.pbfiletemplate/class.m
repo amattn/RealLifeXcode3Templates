@@ -6,7 +6,7 @@
  *  \brief Part of «PROJECTNAME»
  *  \details
  *
- *  \abstract CLASS_ABSTRACT 
+ *  \abstract Abtract Base class for the various Core Data Entity Managers 
  *  \copyright Copyright «ORGANIZATIONNAME» «YEAR». All rights reserved.
  */
 

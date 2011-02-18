@@ -6,7 +6,7 @@
  *  \brief Part of «PROJECTNAME»
  *  \details
  *
- *  \abstract CATEGORY_ABSTRACT 
+ *  \abstract CLASS_ABSTRACT 
  *  \copyright Copyright «ORGANIZATIONNAME» «YEAR». All rights reserved.
  */
 

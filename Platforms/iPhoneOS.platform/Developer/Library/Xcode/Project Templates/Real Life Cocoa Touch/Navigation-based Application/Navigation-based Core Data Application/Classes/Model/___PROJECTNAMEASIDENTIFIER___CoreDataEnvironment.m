@@ -160,7 +160,7 @@ static ___PROJECTNAMEASIDENTIFIER___CoreDataEnvironment *__sharedCoreDataEnviron
         return [self objectForObjectID:objectID contextIdentifier:contextIdentifier];
     } else {
         NSString *errorDescription = [NSString stringWithFormat:@"Could not get object for ObjectIDString %@ in %@", objectIDString, NSStringFromSelector(_cmd)];
-        NSError *error = QUICK_NSERROR(23384, errorDescription); //random, arbitrary error code.
+        NSError *error = RLQUICK_ERROR(23384, errorDescription); //random, arbitrary error code.
         self.errorHandlerBlock(error, _cmd, NO);
     }
     return nil;
@@ -314,7 +314,7 @@ static ___PROJECTNAMEASIDENTIFIER___CoreDataEnvironment *__sharedCoreDataEnviron
         return managedObjectContext;
     } else {
         NSString *errorDescription = @"Fatal Error: NSPersistentStoreCoordinator cannot be nil";
-        NSError *error = QUICK_NSERROR(58172, errorDescription); //random, arbitrary error code.
+        NSError *error = RLQUICK_ERROR(58172, errorDescription); //random, arbitrary error code.
         self.errorHandlerBlock(error, _cmd, YES);
         return nil;
     }
@@ -357,7 +357,7 @@ static ___PROJECTNAMEASIDENTIFIER___CoreDataEnvironment *__sharedCoreDataEnviron
 
     if (_managedObjectModel == nil) {
         NSString *errorDescription = @"Fatal Error: _managedObjectModel cannot be nil";
-        NSError *error = QUICK_NSERROR(72081, errorDescription); //random, arbitrary error code.
+        NSError *error = RLQUICK_ERROR(72081, errorDescription); //random, arbitrary error code.
         self.errorHandlerBlock(error, _cmd, YES);
         return nil;
     }
