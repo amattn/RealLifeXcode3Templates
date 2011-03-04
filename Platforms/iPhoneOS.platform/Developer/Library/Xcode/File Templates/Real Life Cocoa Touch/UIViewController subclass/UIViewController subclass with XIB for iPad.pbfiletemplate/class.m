@@ -36,8 +36,15 @@
 }
 */
 
+- (void)releaseViewResorces;
+{
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
 - (void)dealloc;
 {
+	[self releaseViewResources];
     [super dealloc];
 }
 
@@ -60,8 +67,7 @@
 
 - (void)viewDidUnload;
 {
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+	[self releaseViewResources];
     [super viewDidUnload];
 }
 

@@ -21,6 +21,8 @@
 
 }
 
+#pragma mark ** Designated Initializer **
+
 #pragma mark ** Properties **
 
 #pragma mark ** Methods **

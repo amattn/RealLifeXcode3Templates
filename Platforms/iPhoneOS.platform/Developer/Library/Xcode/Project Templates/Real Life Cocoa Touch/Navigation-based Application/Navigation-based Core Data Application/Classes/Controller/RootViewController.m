@@ -23,8 +23,15 @@
 #pragma mark -
 #pragma mark ** Memory management **
 
+- (void)releaseViewResorces;
+{
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
 - (void)dealloc;
 {
+	[self releaseViewResources];
     self.fetchedResultsController = nil;
     [super dealloc];
 }
@@ -61,8 +68,8 @@
 
 - (void)viewDidUnload;
 {
-    // Release anything that can be recreated in viewDidLoad or on demand.
-    // e.g. self.myOutlet = nil;
+	[self releaseViewResources];
+    [super viewDidUnload];
 }
 
 /*
@@ -124,6 +131,9 @@
 
 - (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 {
+	if (cell == nil)
+		return;
+		
     // Configure the cell.
     NSManagedObject *managedObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
 

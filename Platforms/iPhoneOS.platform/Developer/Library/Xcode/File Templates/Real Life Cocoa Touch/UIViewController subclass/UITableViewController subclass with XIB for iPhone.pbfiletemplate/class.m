@@ -18,7 +18,7 @@ typedef enum {
     «FILEBASENAMEASIDENTIFIER»SectionType1 = 0,
     «FILEBASENAMEASIDENTIFIER»SectionType2,
     «FILEBASENAMEASIDENTIFIER»SectionCount,
-    «FILEBASENAMEASIDENTIFIER»SectionUndefined
+    «FILEBASENAMEASIDENTIFIER»SectionInvalid
 } «FILEBASENAMEASIDENTIFIER»Section;
 
 #pragma mark ** Protocols & Declarations **
@@ -47,8 +47,15 @@ typedef enum {
 }
 */
 
+- (void)releaseViewResorces;
+{
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
 - (void)dealloc;
 {
+	[self releaseViewResources];
     [super dealloc];
 }
 
@@ -73,8 +80,8 @@ typedef enum {
 
 - (void)viewDidUnload;
 {
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+	[self releaseViewResources];
+    [super viewDidUnload];
 }
 
 /*
@@ -118,6 +125,9 @@ typedef enum {
 
 - (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 {
+	if (cell == nil)
+		return;
+		
     // Configure the cell.
     switch (indexPath.section)
     {
