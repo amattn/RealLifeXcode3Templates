@@ -262,17 +262,29 @@
 }
 
 - (NSFetchedResultsController *)fetchedResultsControllerForFetchRequest:(NSFetchRequest *)fetchRequest
-                                                      contextIdentifier:(RLContextIdentifier)contextIdentifier
+                                                      contextIdentifier:(SSContextIdentifier)contextIdentifier
+                                                     sectionNameKeyPath:(NSString *)sectionNameKeyPath
                                                               cacheName:(NSString *)cacheName;
 {
     NSFetchedResultsController *newFetchedResultsController;
     NSManagedObjectContext *managedObjectContext = [self managedObjectContextForContextIdentifier:contextIdentifier];
     newFetchedResultsController = [[[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                                                        managedObjectContext:managedObjectContext
-                                                                         sectionNameKeyPath:nil
+                                                                         sectionNameKeyPath:sectionNameKeyPath
                                                                                   cacheName:cacheName] autorelease];
     
     return newFetchedResultsController;    
+}
+
+
+- (NSFetchedResultsController *)fetchedResultsControllerForFetchRequest:(NSFetchRequest *)fetchRequest
+                                                      contextIdentifier:(SSContextIdentifier)contextIdentifier
+                                                              cacheName:(NSString *)cacheName;
+{
+    return [self fetchedResultsControllerForFetchRequest:fetchRequest
+                                       contextIdentifier:contextIdentifier
+                                      sectionNameKeyPath:nil
+                                               cacheName:CACHE_NAME];
 }
 
 - (NSFetchedResultsController *)fetchedResultsControllerForFetchRequest:(NSFetchRequest *)fetchRequest

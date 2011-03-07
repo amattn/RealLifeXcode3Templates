@@ -102,7 +102,13 @@ static «FILEBASENAMEASIDENTIFIER» *__shared«FILEBASENAMEASIDENTIFIER» = nil;
 
 - (NSArray *)defaultSortDescriptors;
 {
-    return [super defaultSortDescriptors];
+    // Here is an example of how to add a custom sort descriptor in addition to the default sort descriptors.
+    //
+    // NSSortDescriptor *sorter = [NSSortDescriptor sortDescriptorWithKey:CD_KEY_TS_ADD ascending:NO];
+    // NSArray *scanRecordSortDescriptors = [NSArray arrayWithObject:sorter];
+    // return [scanRecordSortDescriptors arrayByAddingObjectsFromArray:super.defaultSortDescriptors];
+
+    return super.defaultSortDescriptors;
 }
 
 //*****************************************************************************

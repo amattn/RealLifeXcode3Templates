@@ -76,6 +76,10 @@
 
 - (void)deleteFetchedResultsControllerCache;
 - (NSFetchedResultsController *)fetchedResultsControllerForFetchRequest:(NSFetchRequest *)fetchRequest
+                                                      contextIdentifier:(SSContextIdentifier)contextIdentifier
+                                                     sectionNameKeyPath:(NSString *)sectionNameKeyPath
+                                                              cacheName:(NSString *)cacheName;
+- (NSFetchedResultsController *)fetchedResultsControllerForFetchRequest:(NSFetchRequest *)fetchRequest
                                                       contextIdentifier:(RLContextIdentifier)contextIdentifier
                                                               cacheName:(NSString *)cacheName;
 - (NSFetchedResultsController *)fetchedResultsControllerForFetchRequest:(NSFetchRequest *)fetchRequest
