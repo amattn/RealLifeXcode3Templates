@@ -6,17 +6,18 @@
  *  \brief Part of «PROJECTNAME»
  *  \details
  *
- *  \abstract CLASS_ABSTRACT 
+ *  \abstract CATEGORY_ABSTRACT 
  *  \copyright Copyright «ORGANIZATIONNAME» «YEAR». All rights reserved.
  */
 
 «OPTIONALHEADERIMPORTLINE»
+
+#pragma mark ** Constant Defines **
 
 @implementation NSObject («FILEBASENAMEASIDENTIFIER»)
 
 //*****************************************************************************
 #pragma mark -
 #pragma mark ** Methods **
-
 
 @end
