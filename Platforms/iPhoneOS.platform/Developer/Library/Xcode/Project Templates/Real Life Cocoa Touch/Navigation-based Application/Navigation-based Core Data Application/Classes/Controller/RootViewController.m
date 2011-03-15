@@ -23,7 +23,7 @@
 #pragma mark -
 #pragma mark ** Memory management **
 
-- (void)releaseViewResorces;
+- (void)releaseViewResources;
 {
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
