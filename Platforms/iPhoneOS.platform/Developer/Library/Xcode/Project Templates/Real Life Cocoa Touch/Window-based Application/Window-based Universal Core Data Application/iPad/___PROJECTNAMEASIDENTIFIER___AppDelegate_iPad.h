@@ -10,13 +10,13 @@
  *  \copyright Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
  */
 
-#import "AppDelegate_Shared.h"
+#import "___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.h"
 
 #pragma mark ** Constant Defines **
 
 #pragma mark ** Protocols & Declarations **
 
-@interface WBUCDAppDelegate_iPad : AppDelegate_Shared
+@interface ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad : ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared
 {
 
 }
