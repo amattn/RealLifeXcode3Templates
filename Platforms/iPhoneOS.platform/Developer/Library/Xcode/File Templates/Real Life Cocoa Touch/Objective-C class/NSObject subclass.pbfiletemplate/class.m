@@ -22,7 +22,7 @@
 
 //*****************************************************************************
 #pragma mark -
-#pragma mark ** Methods **
+#pragma mark ** Lifecycle & Memory Management **
 
 - (id)init;
 {
