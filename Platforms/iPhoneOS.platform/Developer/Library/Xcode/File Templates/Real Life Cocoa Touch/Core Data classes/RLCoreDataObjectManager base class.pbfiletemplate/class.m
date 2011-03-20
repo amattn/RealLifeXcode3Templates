@@ -3,7 +3,7 @@
  *  \author «FULLUSERNAME»
  *  \date «DATE»
  *  \class «FILEBASENAMEASIDENTIFIER»
- *  \brief Part of «PROJECTNAME»
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract Abtract Base class for the various Core Data Entity Managers 

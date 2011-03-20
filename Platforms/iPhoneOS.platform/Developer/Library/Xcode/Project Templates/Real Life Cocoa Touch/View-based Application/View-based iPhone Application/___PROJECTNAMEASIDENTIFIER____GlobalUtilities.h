@@ -2,7 +2,7 @@
  *  \file ___PROJECTNAMEASIDENTIFIER____GlobalUtilities.h
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
- *  \brief Part of ___PROJECTNAME___
+ *  \brief Useful and Convenient Collection of Macros
  *  \details Original version created by Matthew Nunogawa on Mon Sep 22 2003.
  *           https://github.com/amattn/RealLifeXcodeTemplates
  *           This software is provided "as-is", and without any express or

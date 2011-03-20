@@ -3,7 +3,7 @@
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
  *  \class ___PROJECTNAMEASIDENTIFIER___ViewController
- *  \brief Part of ___PROJECTNAME___
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT 

@@ -1,22 +1,22 @@
 /******************************************************************************
- *  \file WBUCDAppDelegate_iPhone.h
- *  \author Matt Nunogawa
- *  \date 2011/3/20
- *  \class WBUCDAppDelegate_iPhone
- *  \brief Part of WBUCD
+ *  \file ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone.h
+ *  \author ___FULLUSERNAME___
+ *  \date ___DATE___
+ *  \class ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT 
- *  \copyright Copyright 6Tringle LLC 2011. All rights reserved.
+ *  \copyright Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
  */
 
-#import "AppDelegate_Shared.h"
+#import "___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.h"
 
 #pragma mark ** Constant Defines **
 
 #pragma mark ** Protocols & Declarations **
 
-@interface WBUCDAppDelegate_iPhone : AppDelegate_Shared
+@interface ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone : ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared
 {
 
 }

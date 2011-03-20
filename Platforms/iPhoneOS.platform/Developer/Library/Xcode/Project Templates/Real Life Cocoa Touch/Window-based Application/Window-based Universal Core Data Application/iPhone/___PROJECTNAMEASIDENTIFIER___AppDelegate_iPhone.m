@@ -1,23 +1,23 @@
 /******************************************************************************
- *  \file WBUCDAppDelegate_iPhone.m
- *  \author Matt Nunogawa
- *  \date 2011/3/20
- *  \class WBUCDAppDelegate_iPhone
- *  \brief Part of WBUCD
+ *  \file ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone.m
+ *  \author ___FULLUSERNAME___
+ *  \date ___DATE___
+ *  \class ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone
+ *  \brief CLASS_BRIEF
  *  \details
  *
- *  \abstract CLASS_ABSTRACT
- *  \copyright Copyright 6Tringle LLC 2011. All rights reserved.
+ *  \abstract CLASS_ABSTRACT 
+ *  \copyright Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
  */
 
-#import "WBUCDAppDelegate_iPhone.h"
+#import "___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone.h"
 
 
-@interface WBUCDAppDelegate_iPhone ()
+@interface ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone ()
 
 @end
 
-@implementation WBUCDAppDelegate_iPhone
+@implementation ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone
 #pragma mark ** Synthesis **
 #pragma mark ** Static Variables **
 

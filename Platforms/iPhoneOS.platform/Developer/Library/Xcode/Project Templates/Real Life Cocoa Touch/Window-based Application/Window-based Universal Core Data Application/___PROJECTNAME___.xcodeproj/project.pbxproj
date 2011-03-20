@@ -15,7 +15,7 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow_iPad.xib */; };
 		28EEBFDD1118E19E00187D67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EEBFDC1118E19E00187D67 /* CoreData.framework */; };
-		28EEC04B1118E28000187D67 /* AppDelegate_Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */; };
+		28EEC04B1118E28000187D67 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EEC04A1118E28000187D67 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.m */; };
 		2A2DB1521336B8F10098C0C6 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DB1511336B8F10098C0C6 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone.m */; };
 		2A2DB1771336BD460098C0C6 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DB1761336BD460098C0C6 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad.m */; };
 /* End PBXBuildFile section */
@@ -29,8 +29,8 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28AD733E0D9D9553002E5188 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow_iPad.xib; path = iPad/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		28EEBFDC1118E19E00187D67 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		28EEC0491118E28000187D67 /* AppDelegate_Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate_Shared.h; path = Shared/AppDelegate_Shared.h; sourceTree = "<group>"; };
-		28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate_Shared.m; path = Shared/AppDelegate_Shared.m; sourceTree = "<group>"; };
+		28EEC0491118E28000187D67 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.h; path = Shared/___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.h; sourceTree = "<group>"; };
+		28EEC04A1118E28000187D67 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.m; path = Shared/___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		2A2DB14D1336B85F0098C0C6 /* ___PROJECTNAMEASIDENTIFIER____GlobalUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ___PROJECTNAMEASIDENTIFIER____GlobalUtilities.h; sourceTree = "<group>"; };
 		2A2DB1501336B8F10098C0C6 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone.h; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				2819307C112F81BE00ECF9B4 /* ___PROJECTNAMEASIDENTIFIER___.xcdatamodeld */,
-				28EEC0491118E28000187D67 /* AppDelegate_Shared.h */,
-				28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */,
+				28EEC0491118E28000187D67 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.h */,
+				28EEC04A1118E28000187D67 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.m */,
 				8D1107310486CEB800E47090 /* ___PROJECTNAMEASIDENTIFIER___-Info.plist */,
 			);
 			name = Shared;
@@ -191,7 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				28EEC04B1118E28000187D67 /* AppDelegate_Shared.m in Sources */,
+				28EEC04B1118E28000187D67 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.m in Sources */,
 				2819307D112F81BE00ECF9B4 /* ___PROJECTNAMEASIDENTIFIER___.xcdatamodeld in Sources */,
 				2860E38A111B897F00E27156 /* AppDelegate_iPhone.m in Sources */,
 				2A2DB1771336BD460098C0C6 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad.m in Sources */,

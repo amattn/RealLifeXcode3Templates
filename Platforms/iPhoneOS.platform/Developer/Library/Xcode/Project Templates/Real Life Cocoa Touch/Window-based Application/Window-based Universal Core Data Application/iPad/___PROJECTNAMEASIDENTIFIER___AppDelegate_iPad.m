@@ -1,23 +1,23 @@
 /******************************************************************************
- *  \file WBUCDAppDelegate_iPad.m
- *  \author Matt Nunogawa
- *  \date 2011/3/20
- *  \class WBUCDAppDelegate_iPad
- *  \brief Part of WBUCD
+ *  \file ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad.m
+ *  \author ___FULLUSERNAME___
+ *  \date ___DATE___
+ *  \class ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad
+ *  \brief CLASS_BRIEF
  *  \details
  *
- *  \abstract CLASS_ABSTRACT
- *  \copyright Copyright 6Tringle LLC 2011. All rights reserved.
+ *  \abstract CLASS_ABSTRACT 
+ *  \copyright Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
  */
 
-#import "WBUCDAppDelegate_iPad.h"
+#import "___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad.h"
 
 
-@interface WBUCDAppDelegate_iPad ()
+@interface ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad ()
 
 @end
 
-@implementation WBUCDAppDelegate_iPad
+@implementation ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad
 #pragma mark ** Synthesis **
 #pragma mark ** Static Variables **
 
