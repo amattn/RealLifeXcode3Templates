@@ -70,6 +70,9 @@
 				2A2DB1501336B8F10098C0C6 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone.h */,
 				2A2DB1511336B8F10098C0C6 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPhone.m */,
 				2860E389111B897F00E27156 /* MainWindow_iPhone.xib */,
+				2A9E89F51337B50F004E4E37 /* Model */,
+				2A9E89FB1337B51D004E4E37 /* Controller */,
+				2A9E89F81337B518004E4E37 /* View */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -81,6 +84,9 @@
 				28EEC0491118E28000187D67 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.h */,
 				28EEC04A1118E28000187D67 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_Shared.m */,
 				8D1107310486CEB800E47090 /* ___PROJECTNAMEASIDENTIFIER___-Info.plist */,
+				2A9E8A071337B544004E4E37 /* Model */,
+				2A9E8A0D1337B54E004E4E37 /* Controller */,
+				2A9E8A091337B544004E4E37 /* View */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -114,6 +120,9 @@
 				2A2DB1751336BD460098C0C6 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad.h */,
 				2A2DB1761336BD460098C0C6 /* ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad.m */,
 				28AD733E0D9D9553002E5188 /* MainWindow_iPad.xib */,
+				2A9E89FE1337B52D004E4E37 /* Model */,
+				2A9E8A041337B532004E4E37 /* Controller */,
+				2A9E8A001337B52D004E4E37 /* View */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -127,6 +136,75 @@
 				28EEBFDC1118E19E00187D67 /* CoreData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A9E89F51337B50F004E4E37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A9E89F81337B518004E4E37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A9E89FB1337B51D004E4E37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A9E89FE1337B52D004E4E37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = iPad/Model;
+			sourceTree = "<group>";
+		};
+		2A9E8A001337B52D004E4E37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = iPad/View;
+			sourceTree = "<group>";
+		};
+		2A9E8A041337B532004E4E37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = iPad/Controller;
+			sourceTree = "<group>";
+		};
+		2A9E8A071337B544004E4E37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = Shared/Model;
+			sourceTree = "<group>";
+		};
+		2A9E8A091337B544004E4E37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = Shared/View;
+			sourceTree = "<group>";
+		};
+		2A9E8A0D1337B54E004E4E37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = Shared/Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
