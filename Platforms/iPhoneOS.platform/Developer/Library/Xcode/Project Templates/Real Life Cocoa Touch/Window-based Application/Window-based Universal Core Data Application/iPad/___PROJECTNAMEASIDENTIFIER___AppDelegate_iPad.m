@@ -19,7 +19,6 @@
 
 @implementation ___PROJECTNAMEASIDENTIFIER___AppDelegate_iPad
 #pragma mark ** Synthesis **
-#pragma mark ** Static Variables **
 
 //*****************************************************************************
 #pragma mark -
