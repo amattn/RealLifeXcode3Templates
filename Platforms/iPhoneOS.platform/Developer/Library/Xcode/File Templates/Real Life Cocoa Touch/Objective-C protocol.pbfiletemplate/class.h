@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file «FILENAME»
  *  \author «FULLUSERNAME»
  *  \date «DATE»
  *  \protocol «FILEBASENAMEASIDENTIFIER»
- *  \brief Part of «PROJECTNAME»
+ *  \brief PROTOCOL_BRIEF
  *  \details
  *
  *  \abstract PROTOCOL_ABSTRACT 

@@ -1,8 +1,8 @@
-/*********************************************************************
+/******************************************************************************
  *  \file ___PROJECTNAMEASIDENTIFIER____GlobalUtilities.h
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
- *  \brief Part of ___PROJECTNAME___
+ *  \brief Useful and Convenient Collection of Macros
  *  \details Original version created by Matthew Nunogawa on Mon Sep 22 2003.
  *           https://github.com/amattn/RealLifeXcodeTemplates
  *           This software is provided "as-is", and without any express or
@@ -14,13 +14,15 @@
  */
 
 #pragma mark -
-#pragma mark ** NSNumber macros **
+#pragma mark ** Convenience macros **
 
 #define RLYES [NSNumber numberWithBool:YES]
 #define RLNO [NSNumber numberWithBool:NO]
 
-#define RLFloatNumber(x) [NSNumber numberWithFloat:x]
-#define RLIntegerNumber(x) [NSNumber numberWithInteger:x]
+#define RLQUICK_FLOAT(x) [NSNumber numberWithFloat:x]
+#define RLQUICK_INTEGER(x) [NSNumber numberWithInteger:x]
+
+#define RLQUICK_ERROR(error_code, error_description) [NSError errorWithDomain:NSStringFromClass([self class]) code:error_code userInfo:[NSDictionary dictionaryWithObject:error_description forKey:NSLocalizedDescriptionKey]];
 
 #pragma mark -
 #pragma mark ** Log macros **

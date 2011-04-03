@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file ___PROJECTNAMEASIDENTIFIER___CoreDataEnvironment.h
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
- *  \class RootViewController
- *  \brief Part of ___PROJECTNAME___
+ *  \class ___PROJECTNAMEASIDENTIFIER___CoreDataEnvironment
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT 
@@ -12,13 +12,17 @@
  
 #import <CoreData/CoreData.h>
 
-#define CORE_DATA_FILE_NAME @"com.___ORGANIZATIONNAME___.core_data.sqlite"
+#pragma mark ** Constant Defines **
+
+#define CORE_DATA_FILE_NAME @"com.___ORGANIZATIONNAME___.___PROJECTNAMEASIDENTIFIER___.sqlite"
 
 //Likely an Xcode bug, but as of v3.2.5, renaming the .xcdatamodeld does NOT rename the actual filename in the finder.
 //You must use the filename shown in the finder, not the filename shown in the project window.
 #define CORE_DATA_MOMD_FILENAME @"___PROJECTNAMEASIDENTIFIER___"
 
-#define CORE_DATA_DISPATCH_QUEUE_LABEL_FORMAT @"com.___ORGANIZATIONNAME___.___PROJECTNAMEASIDENTIFIER___CoreDataEnvironment.dq_%d" //This should have on %d identifying the thread the dispatch queue is attached to.
+#define CORE_DATA_DISPATCH_QUEUE_LABEL_FORMAT @"com.___ORGANIZATIONNAME___.___PROJECTNAMEASIDENTIFIER___CoreDataEnvironment.dq_%d" //This must have on %d identifying the thread the dispatch queue is attached to.
+
+#pragma mark ** Protocols & Declarations **
 
 /*!
     @enum       ___PROJECTNAMEASIDENTIFIER___ContextIdentifier
@@ -44,20 +48,24 @@ typedef enum
     ___PROJECTNAMEASIDENTIFIER___ContextIdentifierInvalid
 } ___PROJECTNAMEASIDENTIFIER___ContextIdentifier;
 
+typedef void (^RLCoreDataErrorHandlerType)(NSError *error, SEL selectorWithError, BOOL isFatal);
+
 @interface ___PROJECTNAMEASIDENTIFIER___CoreDataEnvironment : NSObject
 {
 
 @private
     //Internal only variables.  Use properties and accessors to access
-    NSManagedObjectModel *managedObjectModel_;
-    NSPersistentStoreCoordinator *persistentStoreCoordinator_;
-    NSMutableDictionary *managedObjectContextHash_;
-    NSMutableDictionary *dispatchQueueHash_;
- 
+    NSManagedObjectModel *_managedObjectModel;
+    NSPersistentStoreCoordinator *_persistentStoreCoordinator;
+    NSMutableDictionary *_managedObjectContextHash;
+    NSMutableDictionary *_dispatchQueueHash;
+
     //leave these as nil to use the default values
-    BOOL isTestEnvironment_;
-    NSString *storeType_;
-    NSBundle *modelBundle_;
+    BOOL _isTestEnvironment;
+    NSString *_storeType;
+    NSBundle *_modelBundle;
+
+    RLCoreDataErrorHandlerType _errorHandlerBlock;
 }
 
 #pragma mark ** Singleton Accessor **
@@ -67,22 +75,22 @@ typedef enum
 @property(retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property(retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property(retain, readonly) NSManagedObjectContext *managedObjectContextForMainThread;
+- (NSManagedObjectContext *)managedObjectContextForContextIdentifier:(___PROJECTNAMEASIDENTIFIER___ContextIdentifier)contextIdentifier;
+- (dispatch_queue_t)dispatchQueueForContextIdentifier:(___PROJECTNAMEASIDENTIFIER___ContextIdentifier)contextIdentifier;
+@property(copy) RLCoreDataErrorHandlerType errorHandlerBlock;
 
 //Typically only changed for test or debug...
 @property(assign) BOOL isTestEnvironment;
-@property(retain, readonly) NSString *storeType; //Default is nssqlstoretype.  
-@property(retain, readonly) NSBundle *modelBundle; //default is [NSBundle mainBundle]
-
-- (NSManagedObjectContext *)managedObjectContextForContextIdentifier:(___PROJECTNAMEASIDENTIFIER___ContextIdentifier)contextIdentifier;
-- (dispatch_queue_t)dispatchQueueForContextIdentifier:(___PROJECTNAMEASIDENTIFIER___ContextIdentifier)contextIdentifier;
+@property(retain, readonly) NSString *storeType;    //Default is NSSQLiteStoreType.
+@property(retain, readonly) NSBundle *modelBundle;  //Default is [NSBundle mainBundle]
 
 #pragma mark ** Helpers **
 
-//Get MO from an NSManagedObjectID
+//Get NSManagedObject from an NSManagedObjectID
 - (NSManagedObject *)objectForObjectID:(NSManagedObjectID *)objectID
                      contextIdentifier:(___PROJECTNAMEASIDENTIFIER___ContextIdentifier)contextIdentifier;
 
-//get MO form an objectIDString
+//get NSManagedObject form an objectIDString
 - (NSManagedObject *)objectForObjectIDString:(NSString *)objectIDString
                            contextIdentifier:(___PROJECTNAMEASIDENTIFIER___ContextIdentifier)contextIdentifier;
 

@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file «FILENAME»
  *  \author «FULLUSERNAME»
  *  \date «DATE»
  *  \class «FILEBASENAMEASIDENTIFIER»
- *  \brief Part of «PROJECTNAME»
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT 
@@ -18,7 +18,7 @@ typedef enum {
     «FILEBASENAMEASIDENTIFIER»SectionType1 = 0,
     «FILEBASENAMEASIDENTIFIER»SectionType2,
     «FILEBASENAMEASIDENTIFIER»SectionCount,
-    «FILEBASENAMEASIDENTIFIER»SectionUndefined
+    «FILEBASENAMEASIDENTIFIER»SectionInvalid
 } «FILEBASENAMEASIDENTIFIER»Section;
 
 #pragma mark ** Protocols & Declarations **
@@ -31,7 +31,7 @@ typedef enum {
 #pragma mark ** Synthesis **
 #pragma mark ** Static Variables **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Lifecycle & Memory Management **
 
@@ -47,8 +47,15 @@ typedef enum {
 }
 */
 
+- (void)releaseViewResources;
+{
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
 - (void)dealloc;
 {
+	[self releaseViewResources];
     [super dealloc];
 }
 
@@ -60,7 +67,7 @@ typedef enum {
 }
 
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UIView Methods **
 
@@ -73,8 +80,8 @@ typedef enum {
 
 - (void)viewDidUnload;
 {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+	[self releaseViewResources];
+    [super viewDidUnload];
 }
 
 /*
@@ -92,13 +99,13 @@ typedef enum {
 /*
 - (void)viewWillDisappear:(BOOL)animated;
 {
-	[super viewWillDisappear:animated];
+    [super viewWillDisappear:animated];
 }
 */
 /*
 - (void)viewDidDisappear:(BOOL)animated;
 {
-	[super viewDidDisappear:animated];
+    [super viewDidDisappear:animated];
 }
 */
 
@@ -112,12 +119,15 @@ typedef enum {
 }
 */
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewData Helper Methods **
 
 - (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 {
+	if (cell == nil)
+		return;
+		
     // Configure the cell.
     switch (indexPath.section)
     {
@@ -134,7 +144,7 @@ typedef enum {
     }
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDataSource **
 
@@ -172,7 +182,7 @@ typedef enum {
     return cell;
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDelegate **
 
@@ -181,9 +191,9 @@ typedef enum {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     // Navigation logic may go here -- for example, create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController animated:YES];
-	// [anotherViewController release];
+    // AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
+    // [self.navigationController pushViewController:anotherViewController animated:YES];
+    // [anotherViewController release];
 }
 */
 
@@ -227,15 +237,15 @@ typedef enum {
 }
 */
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** IBActions **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Accesssors **
 

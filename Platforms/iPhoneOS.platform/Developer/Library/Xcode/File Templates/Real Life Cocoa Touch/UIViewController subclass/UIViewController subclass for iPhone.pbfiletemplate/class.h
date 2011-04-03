@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file «FILENAME»
  *  \author «FULLUSERNAME»
  *  \date «DATE»
  *  \class «FILEBASENAMEASIDENTIFIER»
- *  \brief Part of «PROJECTNAME»
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT 
@@ -20,6 +20,9 @@
 {
 
 }
+
+#pragma mark ** Designated Initializer **
+
 #pragma mark ** Properties **
 
 #pragma mark ** Methods **

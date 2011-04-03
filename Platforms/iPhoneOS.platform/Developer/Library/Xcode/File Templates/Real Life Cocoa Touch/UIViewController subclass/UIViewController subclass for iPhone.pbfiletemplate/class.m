@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file «FILENAME»
  *  \author «FULLUSERNAME»
  *  \date «DATE»
  *  \class «FILEBASENAMEASIDENTIFIER»
- *  \brief Part of «PROJECTNAME»
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT 
@@ -20,7 +20,7 @@
 #pragma mark ** Synthesis **
 #pragma mark ** Static Variables **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Lifecycle & Memory Management **
 
@@ -36,8 +36,15 @@
 }
 */
 
+- (void)releaseViewResources;
+{
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
 - (void)dealloc;
 {
+	[self releaseViewResources];
     [super dealloc];
 }
 
@@ -48,7 +55,7 @@
     // Release anything that's not essential, such as cached data
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UIViewController Methods **
 
@@ -60,8 +67,7 @@
 
 - (void)viewDidUnload;
 {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+	[self releaseViewResources];
     [super viewDidUnload];
 }
 
@@ -80,13 +86,13 @@
 /*
 - (void)viewWillDisappear:(BOOL)animated;
 {
-	[super viewWillDisappear:animated];
+    [super viewWillDisappear:animated];
 }
 */
 /*
 - (void)viewDidDisappear:(BOOL)animated;
 {
-	[super viewDidDisappear:animated];
+    [super viewDidDisappear:animated];
 }
 */
 
@@ -100,15 +106,15 @@
 }
 */
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** IBActions **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Accesssors **
 

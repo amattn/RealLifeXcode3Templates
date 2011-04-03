@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file RootViewController.m
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
  *  \class RootViewController
- *  \brief Part of ___PROJECTNAME___
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT
@@ -17,14 +17,21 @@
 
 #pragma mark ** Synthesis **
 
-@synthesize fetchedResultsController = fetchedResultsController_;
+@synthesize fetchedResultsController = _fetchedResultsController;
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Memory management **
 
+- (void)releaseViewResources;
+{
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
 - (void)dealloc;
 {
+	[self releaseViewResources];
     self.fetchedResultsController = nil;
     [super dealloc];
 }
@@ -37,7 +44,7 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UIView Methods **
 
@@ -61,8 +68,8 @@
 
 - (void)viewDidUnload;
 {
-    // Release anything that can be recreated in viewDidLoad or on demand.
-    // e.g. self.myOutlet = nil;
+	[self releaseViewResources];
+    [super viewDidUnload];
 }
 
 /*
@@ -99,7 +106,7 @@
 }
  */
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** CoreData Methods **
 
@@ -118,19 +125,22 @@
     [[___PROJECTNAMEASIDENTIFIER___CoreDataEnvironment singleton] saveContextForIdentifier:___PROJECTNAMEASIDENTIFIER___MainThreadContext];
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewData Helper Methods **
 
 - (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 {
+	if (cell == nil)
+		return;
+		
     // Configure the cell.
     NSManagedObject *managedObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
 
     cell.textLabel.text = [[managedObject valueForKey:@"timeStamp"] description];
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDataSource **
 
@@ -160,7 +170,7 @@
     return cell;
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDelegate **
 
@@ -208,7 +218,7 @@
 }
 
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** NSFetchedResultsControllerDelegate **
 
@@ -270,22 +280,22 @@
     [self.tableView endUpdates];
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** IBActions **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Accesssors **
 
 - (NSFetchedResultsController *)fetchedResultsController;
 {
-    if (fetchedResultsController_)
-        return fetchedResultsController_;
+    if (_fetchedResultsController)
+        return _fetchedResultsController;
 
     /*
      Set up the fetched results controller.
@@ -307,13 +317,13 @@
 
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    fetchedResultsController_ = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                                                     managedObjectContext:context
                                                                       sectionNameKeyPath:nil
                                                                                cacheName:@"___PROJECTNAMEASIDENTIFIER___Root"];
 
-    fetchedResultsController_.delegate = self;
-    return fetchedResultsController_;
+    _fetchedResultsController.delegate = self;
+    return _fetchedResultsController;
 }
 
 @end

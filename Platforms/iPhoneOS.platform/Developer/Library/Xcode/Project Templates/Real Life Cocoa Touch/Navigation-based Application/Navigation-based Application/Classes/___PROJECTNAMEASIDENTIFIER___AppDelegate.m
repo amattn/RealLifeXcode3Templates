@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file ___PROJECTNAMEASIDENTIFIER___AppDelegate.m
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
  *  \class RootViewController
- *  \brief Part of ___PROJECTNAME___
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT 
@@ -15,10 +15,10 @@
 
 @implementation ___PROJECTNAMEASIDENTIFIER___AppDelegate
 
-@synthesize window = window_;
-@synthesize navigationController = navigationController_;
+@synthesize window = _window;
+@synthesize navigationController = _navigationController;
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Memory management **
 
@@ -29,7 +29,7 @@
     [super dealloc];
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
@@ -38,7 +38,7 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Application Lifecycle **
 
@@ -48,7 +48,7 @@
     
     [self.window addSubview:[self.navigationController view]];
     [self.window makeKeyAndVisible];
-	return YES;
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

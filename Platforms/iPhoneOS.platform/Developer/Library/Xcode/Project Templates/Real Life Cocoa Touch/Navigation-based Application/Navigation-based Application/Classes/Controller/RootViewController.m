@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file RootViewController.m
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
  *  \class RootViewController
- *  \brief Part of ___PROJECTNAME___
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT
@@ -14,12 +14,19 @@
 
 @implementation RootViewController
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Lifecycle & Memory management **
 
+- (void)releaseViewResources;
+{
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
 - (void)dealloc;
 {
+    [self releaseViewResources];
     [super dealloc];
 }
 
@@ -31,7 +38,7 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UIView Methods **
 
@@ -45,8 +52,8 @@
 
 - (void)viewDidUnload;
 {
-    // Release anything that can be recreated in viewDidLoad or on demand.
-    // e.g. self.myOutlet = nil;
+    [self releaseViewResources];
+    [super viewDidUnload];
 }
 
 /*
@@ -83,16 +90,19 @@
 }
  */
  
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewData Helper Methods **
 
 - (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 {
+	if (cell == nil)
+		return;
+		
     // Configure the cell.
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDataSource **
 
@@ -121,7 +131,7 @@
     return cell;
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UITableViewDelegate **
 
@@ -130,9 +140,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     // Navigation logic may go here -- for example, create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController animated:YES];
-	// [anotherViewController release];
+    // AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
+    // [self.navigationController pushViewController:anotherViewController animated:YES];
+    // [anotherViewController release];
 }
 */
 
@@ -176,15 +186,15 @@
 }
 */
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** IBActions **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Accesssors **
 

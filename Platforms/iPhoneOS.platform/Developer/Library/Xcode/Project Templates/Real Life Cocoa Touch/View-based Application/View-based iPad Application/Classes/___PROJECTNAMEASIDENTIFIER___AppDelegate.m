@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file ___PROJECTNAMEASIDENTIFIER___AppDelegate.m
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
  *  \class ___PROJECTNAMEASIDENTIFIER___AppDelegate
- *  \brief Part of ___PROJECTNAME___
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT 
@@ -18,7 +18,7 @@
 @synthesize window;
 @synthesize viewController;
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Memory management **
 
@@ -35,7 +35,7 @@
     // that can be recreated (or reloaded from disk) later.
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
@@ -44,7 +44,7 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Application Lifecycle **
 
@@ -54,7 +54,7 @@
     
     [self.window addSubview:viewController.view];
     [self.window makeKeyAndVisible];
-	return YES;
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

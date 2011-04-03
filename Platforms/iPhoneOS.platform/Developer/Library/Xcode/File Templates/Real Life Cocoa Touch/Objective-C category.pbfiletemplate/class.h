@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file «FILENAME»
  *  \author «FULLUSERNAME»
  *  \date «DATE»
  *  \class «FILEBASENAMEASIDENTIFIER»
- *  \brief Part of «PROJECTNAME»
+ *  \brief CATEGORY_BRIEF
  *  \details
  *
  *  \abstract CATEGORY_ABSTRACT 

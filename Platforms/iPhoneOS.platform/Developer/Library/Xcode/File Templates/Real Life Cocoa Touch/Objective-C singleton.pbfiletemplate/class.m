@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file «FILENAME»
  *  \author «FULLUSERNAME»
  *  \date «DATE»
  *  \class «FILEBASENAMEASIDENTIFIER»
- *  \brief Part of «PROJECTNAME»
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT
@@ -29,30 +29,30 @@ static «FILEBASENAMEASIDENTIFIER» *__shared«FILEBASENAMEASIDENTIFIER» = nil;
 
 + («FILEBASENAMEASIDENTIFIER» *)singleton;
 {
-	@synchronized(self)
-	{
-		if (__shared«FILEBASENAMEASIDENTIFIER» == nil)
-		{
-			__shared«FILEBASENAMEASIDENTIFIER» = [[self alloc] init];
-		}
-	}
-	return __shared«FILEBASENAMEASIDENTIFIER»;
+    @synchronized(self)
+    {
+        if (__shared«FILEBASENAMEASIDENTIFIER» == nil)
+        {
+            __shared«FILEBASENAMEASIDENTIFIER» = [[self alloc] init];
+        }
+    }
+    return __shared«FILEBASENAMEASIDENTIFIER»;
 }
 
 + (id)allocWithZone:(NSZone *)zone;
 {
-	@synchronized(self)
-	{
-		if (__shared«FILEBASENAMEASIDENTIFIER» == nil)
-		{
-			__shared«FILEBASENAMEASIDENTIFIER» = [super allocWithZone:zone];
-			return __shared«FILEBASENAMEASIDENTIFIER»;
-		}
-	}
-	return nil;
+    @synchronized(self)
+    {
+        if (__shared«FILEBASENAMEASIDENTIFIER» == nil)
+        {
+            __shared«FILEBASENAMEASIDENTIFIER» = [super allocWithZone:zone];
+            return __shared«FILEBASENAMEASIDENTIFIER»;
+        }
+    }
+    return nil;
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Lifecyle Methods **
 
@@ -70,19 +70,19 @@ static «FILEBASENAMEASIDENTIFIER» *__shared«FILEBASENAMEASIDENTIFIER» = nil;
     [super dealloc];
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** NotificationHandlers **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** IBActions **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Accesssors **
 

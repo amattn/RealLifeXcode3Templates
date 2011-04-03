@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file ___PROJECTNAMEASIDENTIFIER___ViewController.m
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
  *  \class ___PROJECTNAMEASIDENTIFIER___ViewController
- *  \brief Part of ___PROJECTNAME___
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT
@@ -14,7 +14,7 @@
 
 @implementation ___PROJECTNAMEASIDENTIFIER___ViewController
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Lifecycle & Memory management **
 
@@ -43,7 +43,7 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** UIView Methods **
 
@@ -92,15 +92,15 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Utilities **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** IBActions **
 
-/*********************************************************************/
+//*****************************************************************************
 #pragma mark -
 #pragma mark ** Accesssors **
 

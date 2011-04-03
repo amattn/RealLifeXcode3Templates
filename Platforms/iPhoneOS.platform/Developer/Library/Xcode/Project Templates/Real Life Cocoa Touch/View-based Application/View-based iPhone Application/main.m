@@ -1,9 +1,8 @@
-/*********************************************************************
+/******************************************************************************
  *  \file main.m
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
- *  \class RootViewController
- *  \brief Part of ___PROJECTNAME___
+ *  \brief FILE_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT 

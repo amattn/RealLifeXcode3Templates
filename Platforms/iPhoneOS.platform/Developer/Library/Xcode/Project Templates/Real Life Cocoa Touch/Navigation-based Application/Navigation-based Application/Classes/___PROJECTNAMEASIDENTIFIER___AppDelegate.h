@@ -1,9 +1,9 @@
-/*********************************************************************
+/******************************************************************************
  *  \file ___PROJECTNAMEASIDENTIFIER___AppDelegate.h
  *  \author ___FULLUSERNAME___
  *  \date ___DATE___
  *  \class RootViewController
- *  \brief Part of ___PROJECTNAME___
+ *  \brief CLASS_BRIEF
  *  \details
  *
  *  \abstract CLASS_ABSTRACT 
@@ -12,8 +12,8 @@
 
 @interface ___PROJECTNAMEASIDENTIFIER___AppDelegate : NSObject <UIApplicationDelegate>
 {
-    UIWindow *window_;
-    UINavigationController *navigationController_;
+    UIWindow *_window;
+    UINavigationController *_navigationController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
