@@ -1,9 +1,16 @@
-# Real Life Xcode File and Project Templates
+# Real Life Xcode 3.x File and Project Templates
 
 - maintainer: Matt Nunogawa
-- version: 0.3
+- version: 0.4
 
 Better Xcode file and project templates.
+
+## NOTE:
+
+This project is no longer being updated.  Templates are somewhat time-consuming to maintain.  All further effort is being
+put into Xcode 4 templates available at <https://github.com/amattn/>
+
+These templates mostly work, but are left here for historical value only.
 
 ### Install
 
